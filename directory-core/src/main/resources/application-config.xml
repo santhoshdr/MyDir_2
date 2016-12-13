@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+	<import resource="database/db-config.xml"/>
+	<import resource="database/hibernate.cfg.xml"/>
+
+	<bean id="registrationService" class="com.directory.api.impl.RegistrationServiceImpl">
+	</bean>
+
+
+		<bean id="loginService" class="com.directory.api.impl.LoginServiceImpl"></bean>
+		<bean id="createnewSession" class="com.directory.api.impl.CreateSessionImpl"></bean>
+
+
+	  <bean id="registrationDAO" class="com.directory.dao.impl.RegistrationDAOImpl">
+	 <property name="sessionFactory" ref="sessionFactory"/>
+   </bean>
+
+  <bean id="appUserDAO" class="com.directory.dao.impl.AppUserDAOImpl">
+	 <property name="sessionFactory" ref="sessionFactory"/>
+   </bean>
+
+
+
+   	  <bean id="registrationHandler" class="com.directory.handler.RegistrationHandler"/>
+   	  <bean id="loginUserHandler" class="com.directory.handler.LoginUserHandler"/>
+	  <bean id="sendEmailHandler" class="com.directory.handler.SendEmailHandler"/>
+	  <bean id="sendSMSHandler" class="com.directory.handler.SendSMSHandler"/>
+
+
+  <bean id="registrationProcessor" class="com.directory.processor.base.RegistrationProcessor">
+  <property name="handlersList">
+			<list>
+				<ref bean="registrationHandler" />
+				<ref bean="sendEmailHandler" />
+				<ref bean="sendSMSHandler" />
+			</list>
+		</property>
+
+  </bean>
+  <bean id="loginProcessor" class="com.directory.processor.base.LoginProcessor">
+  <property name="handlersList">
+			<list>
+				<ref bean="loginUserHandler" />
+		   </list>
+		</property>
+
+  </bean>
+
+
+</beans>
