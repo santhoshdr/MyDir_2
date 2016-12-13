@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+	<tiles-definitions>
+
+		<definition name="baseLayout" template="/WEB-INF/jsp/commons/baseLayout.jsp">
+			<put-attribute name="title" value="Way2Learn for Free" />
+			<put-attribute name="offerBanner" value="/WEB-INF/jsp/commons/offerBanner.jsp" />
+			<put-attribute name="topMenu" value="/WEB-INF/jsp/commons/topMenu.jsp" />
+			<put-attribute name="body" value="homePageBody" />
+			<put-attribute name="footer" value="/WEB-INF/jsp/commons/footer.jsp" />
+		</definition>
+
+	<!-- 	<definition name="loginSuccess" template="/WEB-INF/jsp/commons/baseLayout.jsp" >
+			<put-attribute name="title" value="Way2Learn for Free" />
+			<put-attribute name="offerBanner" value="/WEB-INF/jsp/commons/offerBanner.jsp" />
+			<put-attribute name="topMenu" value="/WEB-INF/jsp/commons/topMenu.jsp" />
+			<put-attribute name="body" value="loggedinPageMainBody" />
+			<put-attribute name="footer" value="/WEB-INF/jsp/commons/footer.jsp" />
+		</definition> -->
+
+		<definition name="loginSuccess" template="/WEB-INF/jsp/commons/homePageMainBody.jsp">
+			<put-attribute name="title" value="Directory" />
+			<put-attribute name="leftMenu" value="/WEB-INF/jsp/commons/leftMenu.jsp" />
+			<!-- <put-attribute name="body" value="Just body here" /> -->
+			<put-attribute name="offerBanner" value="/WEB-INF/jsp/commons/offerBanner.jsp" />
+			 <put-attribute name="body" value="/WEB-INF/jsp/commons/loggedHomeBody.jsp" />
+	 		<put-attribute name="rightMenu" value="/WEB-INF/jsp/commons/news.jsp" />
+	 	</definition>
+
+	<definition name="myProfile" template="/WEB-INF/jsp/commons/body.jsp">
+			<put-attribute name="title" value="Way2Learn for Free" />
+			<put-attribute name="bannerBox" value="/WEB-INF/jsp/commons/bannerBox.jsp" />
+			<put-attribute name="homePageMainBody" value="myProfileBody"/>
+			<!-- <put-attribute name="clients" value="/WEB-INF/jsp/commons/clients.jsp" /> -->
+			<put-attribute name="aboveFooter" value="/WEB-INF/jsp/commons/aboveFooter.jsp" />
+		</definition>
+
+		<definition name="myProfileBody" template="/WEB-INF/jsp/commons/homePageMainBody.jsp">
+			<put-attribute name="title" value="Directory" />
+			<put-attribute name="leftMenu" value="/WEB-INF/jsp/commons/leftMenu.jsp" />
+			<!-- <put-attribute name="body" value="Just body here" /> -->
+			<put-attribute name="offerBanner" value="/WEB-INF/jsp/commons/offerBanner.jsp" />
+			 <put-attribute name="body" value="/WEB-INF/jsp/user/myProfile.jsp" />
+	 		<put-attribute name="rightMenu" value="/WEB-INF/jsp/commons/news.jsp" />
+	 	</definition>
+
+
+		<definition name="addMember" template="/WEB-INF/jsp/commons/body.jsp">
+			<put-attribute name="title" value="Way2Learn for Free" />
+			<put-attribute name="bannerBox" value="/WEB-INF/jsp/commons/bannerBox.jsp" />
+			<put-attribute name="homePageMainBody" value="addMemberBody"/>
+			<!-- <put-attribute name="clients" value="/WEB-INF/jsp/commons/clients.jsp" /> -->
+			<put-attribute name="aboveFooter" value="/WEB-INF/jsp/commons/aboveFooter.jsp" />
+		</definition>
+
+		<definition name="addMemberBody" template="/WEB-INF/jsp/commons/homePageMainBody.jsp">
+			<put-attribute name="title" value="Directory" />
+			<put-attribute name="leftMenu" value="/WEB-INF/jsp/commons/leftMenu.jsp" />
+			<!-- <put-attribute name="body" value="Just body here" /> -->
+			<put-attribute name="offerBanner" value="/WEB-INF/jsp/commons/offerBanner.jsp" />
+			 <put-attribute name="body" value="/WEB-INF/jsp/member/addFamilyMember.jsp" />
+	 	</definition>
+
+
+
+		<definition name="loginHomePageBody" template="/WEB-INF/jsp/commons/body.jsp">
+			<put-attribute name="title" value="Way2Learn for Free" />
+			<put-attribute name="bannerBox" value="/WEB-INF/jsp/commons/bannerBox.jsp" />
+			<put-attribute name="homePageMainBody" value="loginHomePageMainBody"/>
+			<!-- <put-attribute name="clients" value="/WEB-INF/jsp/commons/clients.jsp" /> -->
+			<put-attribute name="aboveFooter" value="/WEB-INF/jsp/commons/aboveFooter.jsp" />
+		</definition>
+
+
+		<definition name="homePageBody" template="/WEB-INF/jsp/commons/body.jsp">
+			<put-attribute name="title" value="Way2Learn for Free" />
+			<put-attribute name="bannerBox" value="/WEB-INF/jsp/commons/bannerBox.jsp" />
+			<put-attribute name="homePageMainBody" value="homePageMainBody"/>
+			<!-- <put-attribute name="clients" value="/WEB-INF/jsp/commons/clients.jsp" /> -->
+			<put-attribute name="aboveFooter" value="/WEB-INF/jsp/commons/aboveFooter.jsp" />
+		</definition>
+
+		<definition name="homePageMainBody" template="/WEB-INF/jsp/commons/homePageMainBody.jsp">
+			<put-attribute name="title" value="Directory" />
+			<put-attribute name="offerBanner" value="/WEB-INF/jsp/commons/offerBanner.jsp" />
+			<put-attribute name="leftMenu" value="/WEB-INF/jsp/commons/leftMenu.jsp" />
+			<!-- <put-attribute name="body" value="Just body here" /> -->
+			 <put-attribute name="body" value="/WEB-INF/jsp/commons/youTubeVideoPage.jsp" />
+			<put-attribute name="rightMenu" value="/WEB-INF/jsp/commons/news.jsp" />
+		</definition>
+
+		<definition name="loggedinPageMainBody" template="/WEB-INF/jsp/commons/homePageMainBody.jsp">
+			<put-attribute name="title" value="Directory" />
+			<put-attribute name="leftMenu" value="/WEB-INF/jsp/commons/leftMenu.jsp" />
+			<!-- <put-attribute name="body" value="Just body here" /> -->
+			<put-attribute name="offerBanner" value="/WEB-INF/jsp/commons/offerBanner.jsp" />
+			 <put-attribute name="body" value="/WEB-INF/jsp/commons/loggedHomeBody.jsp" />
+	 		<put-attribute name="rightMenu" value="/WEB-INF/jsp/commons/news.jsp" />
+	 	</definition>
+
+
+		<definition name="loginHomePageMainBody" template="/WEB-INF/jsp/commons/homePageMainBody.jsp">
+			<put-attribute name="leftMenu" value="/WEB-INF/jsp/commons/leftMenu.jsp" />
+			 <put-attribute name="title" value="Directory" />
+			 <put-attribute name="offerBanner" value="/WEB-INF/jsp/commons/offerBanner.jsp" />
+			 <put-attribute name="body" value="/WEB-INF/jsp/commons/loginHome.jsp" />
+			<put-attribute name="rightMenu" value="/WEB-INF/jsp/commons/news.jsp" />
+		</definition>
+		<definition name="browseCourses" extends="baseLayout">
+			<put-attribute name="title" value="Browse Courses" />
+			<put-attribute name="body" value="nonHomePageBody" />
+		</definition>
+
+
+		<definition name="registrationhomePageMainBody" template="/WEB-INF/jsp/commons/homePageMainBody.jsp">
+			<put-attribute name="leftMenu" value="/WEB-INF/jsp/commons/leftMenu.jsp" />
+			<put-attribute name="offerBanner" value="/WEB-INF/jsp/commons/offerBanner.jsp" />
+			<put-attribute name="title" value="Directory" />
+			<!-- <put-attribute name="body" value="Just body here" /> -->
+			 <put-attribute name="body" value="/WEB-INF/jsp/register.jsp" />
+			<put-attribute name="rightMenu" value="/WEB-INF/jsp/commons/news.jsp" />
+		</definition>
+
+
+		<definition name="registrationPageBody" template="/WEB-INF/jsp/commons/body.jsp">
+			<put-attribute name="bannerBox" value="/WEB-INF/jsp/commons/bannerBox.jsp" />
+			<put-attribute name="homePageMainBody" value="/WEB-INF/jsp/register.jsp"/>
+			<!-- <put-attribute name="clients" value="/WEB-INF/jsp/commons/clients.jsp" /> -->
+			<put-attribute name="aboveFooter" value="/WEB-INF/jsp/commons/aboveFooter.jsp" />
+		</definition>
+
+		<definition name="register" template="/WEB-INF/jsp/commons/body.jsp">
+			<put-attribute name="title" value="New Registration" />
+			<put-attribute name="bannerBox" value="/WEB-INF/jsp/commons/bannerBox.jsp" />
+			<put-attribute name="homePageMainBody" value="/WEB-INF/jsp/register.jsp" />
+			<!-- <put-attribute name="clients" value="/WEB-INF/jsp/commons/clients.jsp" /> -->
+			<put-attribute name="aboveFooter" value="/WEB-INF/jsp/commons/aboveFooter.jsp" />
+		</definition>
+
+
+			<definition name="newRegistration" template="/WEB-INF/jsp/commons/body.jsp">
+			<put-attribute name="title" value="New Registration" />
+			<put-attribute name="bannerBox" value="/WEB-INF/jsp/commons/bannerBox.jsp" />
+			<put-attribute name="homePageMainBody" value="/WEB-INF/jsp/newRegistration.jsp" />
+			<!-- <put-attribute name="clients" value="/WEB-INF/jsp/commons/clients.jsp" /> -->
+			<put-attribute name="aboveFooter" value="/WEB-INF/jsp/commons/aboveFooter.jsp" />
+		</definition>
+
+
+
+		<definition name="registrationSuccess" template="/WEB-INF/jsp/commons/body.jsp">
+			<put-attribute name="title" value="New Registration" />
+			<put-attribute name="bannerBox" value="/WEB-INF/jsp/commons/bannerBox.jsp" />
+			<put-attribute name="homePageMainBody" value="/WEB-INF/jsp/register.jsp" />
+			<!-- <put-attribute name="clients" value="/WEB-INF/jsp/commons/clients.jsp" /> -->
+			<put-attribute name="aboveFooter" value="/WEB-INF/jsp/commons/aboveFooter.jsp" />
+		</definition>
+
+
+
+
+
+		<definition name="nonHomePageBody" template="/WEB-INF/jsp/application/nonHomePageBody.jsp">
+			<put-attribute name="leftSideBody" value="/WEB-INF/jsp/application/browseCourses.jsp" />
+			<put-attribute name="rightSideBody" value="/WEB-INF/jsp/application/rightSideBody.jsp" />
+		</definition>
+
+		<definition name="viewIndividualCourse" extends="baseLayout">
+			<put-attribute name="title" value="Course Details" />
+			<put-attribute name="body" value="viewIndividualCourseBody"/>
+		</definition>
+
+		<definition name="viewIndividualCourseBody" template="/WEB-INF/jsp/application/viewIndividualCourseBody.jsp">
+			<put-attribute name="viewIndividualCourseBodyLeft" value="/WEB-INF/jsp/application/viewIndividualCourseBodyLeft.jsp" />
+			<put-attribute name="viewIndividualCourseBodyCenter" value="/WEB-INF/jsp/application/viewIndividualCourseBodyCenter.jsp" />
+			<put-attribute name="viewIndividualCourseBodyRight" value="/WEB-INF/jsp/application/rightSideBody2.jsp" />
+		</definition>
+
+
+
+
+	</tiles-definitions>
