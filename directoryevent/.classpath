@@ -12,7 +12,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry combineaccessrules="false" kind="src" path="/directoryexception"/>
 	<classpathentry kind="lib" path="D:/Santhosh/Santhosh_Directory/lib/antlr-2.7.7.jar"/>
 	<classpathentry kind="lib" path="D:/Santhosh/Santhosh_Directory/lib/antlr-runtime-3.4.jar"/>
 	<classpathentry kind="lib" path="D:/Santhosh/Santhosh_Directory/lib/avro-1.7.5.jar"/>
@@ -36,5 +35,6 @@
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/DirectoryException"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

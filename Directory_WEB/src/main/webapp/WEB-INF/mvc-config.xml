@@ -25,11 +25,10 @@
 			</list>
 		</property>
 	</bean>
-<!-- 
+
 		 <bean id="loginService" class="com.directory.api.impl.LoginServiceImpl"></bean>
 
 
- -->
 
 
 <!-- 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"> -->

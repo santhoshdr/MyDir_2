@@ -14,8 +14,6 @@
 	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-context/4.1.6.RELEASE/spring-context-4.1.6.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-context/4.1.6.RELEASE/spring-context-4.1.6.RELEASE-sources.jar"/>
 	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-core/4.1.6.RELEASE/spring-core-4.1.6.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-core/4.1.6.RELEASE/spring-core-4.1.6.RELEASE-sources.jar"/>
 	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-expression/4.1.6.RELEASE/spring-expression-4.1.6.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-expression/4.1.6.RELEASE/spring-expression-4.1.6.RELEASE-sources.jar"/>
-	<classpathentry kind="src" path="/directoryevent"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/directoryexception"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="D:/Userfiles/srajanna/.m2/repository/org/hibernate/hibernate-core/4.3.7.Final/hibernate-core-4.3.7.Final.jar"/>
 	<classpathentry kind="lib" path="D:/Userfiles/srajanna/.m2/repository/org/hibernate/hibernate-core/4.3.7.Final/hibernate-entitymanager-4.3.7.Final.jar"/>
@@ -24,6 +22,8 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry combineaccessrules="false" kind="src" path="/Directory_WEB"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Directory_Web"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/DirectoryEvent"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/DirectoryException"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
