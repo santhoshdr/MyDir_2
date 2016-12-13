@@ -4,6 +4,15 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="DirectoryEvent.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/DirectoryEvent/DirectoryEvent">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="DirectoryException.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/DirectoryException/DirectoryException">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="directory-core.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/directory-core/directory-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="java-output-path" value="/directory_web/target/classes"/>
         <property name="context-root" value="Directory_Web"/>
     </wb-module>

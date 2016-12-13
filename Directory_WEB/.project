@@ -6,6 +6,8 @@
 		<project>directory-core</project>
 		<project>directoryevent</project>
 		<project>directoryexception</project>
+		<project>DirectoryEvent</project>
+		<project>DirectoryException</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
