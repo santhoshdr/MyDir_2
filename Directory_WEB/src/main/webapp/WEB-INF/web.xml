@@ -3,7 +3,7 @@
   <display-name>01mvc-basics</display-name>
   <context-param>
     <param-name>resourcePath</param-name>
-    <param-value>http://localhost:8080/directory_web/resources</param-value>
+    <param-value>http://localhost:8080/Directory_Web/resources</param-value>
   </context-param>
   <servlet>
     <servlet-name>dispatcherServlet</servlet-name>
@@ -26,14 +26,14 @@
     <filter-name>SecurityFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
-  <filter>
+  <!-- <filter>
     <filter-name>springSecurityFilterChain</filter-name>
     <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>springSecurityFilterChain</filter-name>
     <url-pattern>/*</url-pattern>
-  </filter-mapping>
+  </filter-mapping> -->
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
