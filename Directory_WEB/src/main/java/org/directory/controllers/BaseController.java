@@ -12,6 +12,6 @@ public BaseController() {
 	// TODO Auto-generated constructor stub
 }
 
-ApplicationContext configLoader = (ApplicationContext) SpringConfigLoader.getContext();
+public ApplicationContext configLoader = (ApplicationContext) SpringConfigLoader.getContext();
 
 }

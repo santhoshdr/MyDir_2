@@ -23,7 +23,7 @@ import com.directory.user.session.UserSession;
 
 
 @Controller
-public class RegistrationController extends BaseController implements UserDetailsService{
+public class RegistrationController extends BaseController {
 
 
 
@@ -101,7 +101,7 @@ public class RegistrationController extends BaseController implements UserDetail
 	}
 
 
-	@RequestMapping(value = { "/registerUser.htm"}, method = RequestMethod.GET)
+	@RequestMapping(value = { "guest/registerUser.htm"}, method = RequestMethod.GET)
 	public String registerUser(@ModelAttribute("registrationInfoData") RegistrationInfoData registrationInfoData, Model model) {
 
 
@@ -122,12 +122,6 @@ public class RegistrationController extends BaseController implements UserDetail
 	}
 
 
-	@Override
-	public UserDetails loadUserByUsername(String arg0)
-			throws UsernameNotFoundException, DataAccessException {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 
 }

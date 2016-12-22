@@ -49,6 +49,7 @@
 			<div class="msg">${msg}</div>
 		</c:if>
 loginform
+<!-- http://howtodoinjava.com/spring/spring-security/custom-userdetailsservice-example-for-spring-3-security/ -->
 		<form name='loginForm'
 		  action="<c:url value='j_spring_security_check' />" method='POST'>
 

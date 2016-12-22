@@ -26,8 +26,8 @@
 		</property>
 	</bean>
 
-		 <bean id="loginService" class="com.directory.api.impl.LoginServiceImpl"></bean>
-
+<bean id="loginService" class="org.directory.controllers.LoginController"></bean>
+		<!--  <bean id="loginService" class="com.directory.api.impl.LoginServiceImpl"></bean> -->
 
 
 

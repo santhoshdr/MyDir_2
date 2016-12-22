@@ -3,7 +3,7 @@
   <display-name>01mvc-basics</display-name>
   <context-param>
     <param-name>resourcePath</param-name>
-    <param-value>http://localhost:8080/Directory_Web/resources</param-value>
+    <param-value>http://localhost:8080/Directory_WEB/resources</param-value>
   </context-param>
   <servlet>
     <servlet-name>dispatcherServlet</servlet-name>
