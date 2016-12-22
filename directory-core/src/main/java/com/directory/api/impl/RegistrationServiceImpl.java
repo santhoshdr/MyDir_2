@@ -82,34 +82,18 @@ public class RegistrationServiceImpl extends BaseAPIImpl  implements Registratio
 		try{
 		registrationMap.put("registrationEvent", registrationInfoData);
 		RegistrationProcessor registrationProcessor = (RegistrationProcessor)SpringConfigLoader.getBean("registrationProcessor");
-
-
 		List listofProcessors = registrationProcessor.getHandlersList();
-
 		Iterator listofProcessorsIterator = listofProcessors.iterator();
-
 		while(listofProcessorsIterator.hasNext()){
-
 			Object o = listofProcessorsIterator.next();
-
 			if(o instanceof IEventHandler){
-
-			((IEventHandler) o).processHandler(registrationInfoData);
-
+				((IEventHandler) o).processHandler(registrationInfoData);
 			}
-
 		}
 		}catch(Exception e){
 			throw e;
 		}
-
-
-
-
 		return true;
-
-
-
 	}
 
 

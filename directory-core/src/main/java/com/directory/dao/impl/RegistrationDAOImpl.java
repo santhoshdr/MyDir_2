@@ -64,18 +64,17 @@ public class RegistrationDAOImpl extends BaseAPIImpl  implements RegistrationDAO
 	public boolean registerNewUser(RegisterUserDaoEntity registerUserDaoEntity)
 			throws RegistrationException {
 
+		boolean registerSuccess = false;
 		try{
-		Session session = sessionFactory.openSession();
-		session.save(registerUserDaoEntity);
-		session.close();
-
-
-		}
-		catch(Exception e){
-			throw new RegistrationException("Error While registration. Please try after some time");
-		}
-
-		return false;
+			Session session = sessionFactory.openSession();
+			session.save(registerUserDaoEntity);
+			session.close();
+			registerSuccess=true;
+					}
+			catch(Exception e){
+				throw new RegistrationException("Error While registration. Please try after some time");
+			}
+		return registerSuccess;
 	}
 
 }
